@@ -145,10 +145,10 @@ class plgCrowdfundingCronUpdatesNotifier extends JPlugin
             $usersIds = array_unique(array_filter($usersIds));
 
             $projects = new Crowdfunding\Projects(JFactory::getDbo());
-            $projects->load(array("ids" => $projectsIds, "index" => "id"));
+            $projects->load(array("ids" => $projectsIds));
 
             $users = new Crowdfunding\User\Users(JFactory::getDbo());
-            $users->load(array("ids" => $usersIds, "index" => "id"));
+            $users->load(array("ids" => $usersIds));
 
             foreach ($updates as $update) {
                 $user = $users->getUser($update["user_id"]);
