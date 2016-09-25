@@ -38,5 +38,8 @@
             </fieldset>
         </fields>
     </config>
-		
+
+    <updateservers>
+        <server type="extension" priority="1" name="Crowdfunding CRON - Updates Notifier ( from CDN )">http://cdn.itprism.com/updates/crowdfunding/plugins/plg_crowdfundingcron_updatesnotifier.xml</server>
+    </updateservers>
 </extension>
